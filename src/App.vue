@@ -1,6 +1,6 @@
 <script lang="ts" setup scoped>
+import tGnb from '@template/tGnb.vue'
 import { RouterView } from 'vue-router';
-import tGnb from '@template/tGnb.vue';
 </script>
 
 <template>

@@ -11,6 +11,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
+  ignorePatterns:['vite.config.ts'],
   extends: [
     'plugin:vue/vue3-essential',
     'plugin:vue/vue3-recommended',
@@ -27,6 +28,7 @@ module.exports = {
     'vue/require-default-prop': 'off',
     'vue/multi-word-component-names': 'off',
     'vue/comment-directive': 'off',
+    'no-unused-vars': 'off',
     'prettier/prettier': [
       'error',
       {
