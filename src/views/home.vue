@@ -3,7 +3,7 @@ import tWideWrap from '@template/layout/tWideWrap.vue';
 </script>
 
 <template>
-  <t-wide-wrap custom-style="min-h-screen bg-white">
+  <t-wide-wrap custom-style="min-h-[calc(100vh-60px)] bg-white">
     <div class="max-w-1280 w-full">
       HOME
     </div>

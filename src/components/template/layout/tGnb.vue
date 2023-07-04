@@ -3,7 +3,7 @@ import tWideWrap from '@template/layout/tWideWrap.vue';
 </script>
 
 <template>
-  <t-wide-wrap custom-style="p-2 bg-gray-100">
+  <t-wide-wrap custom-style="sticky top-0 p-2 flex items-center h-60 bg-gray-100">
     <div class="max-w-1280 w-full">GNB</div>
   </t-wide-wrap>
 </template>
