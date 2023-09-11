@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import { useHead } from '@vueuse/head';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -9,6 +10,13 @@ const router = createRouter({
       component: () => import('../views/home.vue'),
     },
   ],
+});
+
+router.beforeEach(async (to, _from, next) => {
+  useHead({
+    title: to.name.toString().toUpperCase(),
+  });
+  next();
 });
 
 export default router;
