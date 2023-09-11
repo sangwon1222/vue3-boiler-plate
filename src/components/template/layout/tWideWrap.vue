@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-wrap justify-center w-full" :class="customStyle">
+  <div class="flex w-full flex-wrap justify-center" :class="customStyle">
     <slot />
   </div>
 </template>

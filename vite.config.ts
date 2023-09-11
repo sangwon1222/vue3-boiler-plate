@@ -15,9 +15,7 @@ export default defineConfig({
       { find: '@template', replacement: resolve(__dirname, 'src/components/template') },
       { find: '@atoms', replacement: resolve(__dirname, 'src/components/atoms') },
       { find: '@app', replacement: resolve(__dirname, 'src/app') },
-      { find: '@core', replacement: resolve(__dirname, 'src/app/core') },
-      { find: '@game', replacement: resolve(__dirname, 'src/app/game') },
     ],
   },
-  plugins: [vue(),viteTsConfigPaths()],
+  plugins: [vue(), viteTsConfigPaths()],
 });
