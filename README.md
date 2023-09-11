@@ -8,6 +8,5 @@ Vite
 swiper
 cryto
 axios
-pinia
 lodash-es
 tailwind

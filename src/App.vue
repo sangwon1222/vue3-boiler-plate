@@ -1,18 +1,21 @@
 <script lang="ts" setup scoped>
-import tGnb from '@template/layout/tGnb.vue';
 import { useLayoutStore } from '@store/index';
+import tLoading from '@template/tLoading.vue';
+import tGnb from '@template/layout/tGnb.vue';
 import { RouterView } from 'vue-router';
 import { onMounted } from 'vue';
-const store = useLayoutStore();
 
 onMounted(() => {
-  store.gnb = true;
+  setTimeout(() => {
+    useLayoutStore.isLoading = false;
+  }, 1000);
 });
 </script>
 
 <template>
   <div class="min-h-screen min-w-full">
-    <t-gnb v-if="store.gnb" />
+    <t-loading />
+    <t-gnb v-if="useLayoutStore.gnbMode" />
     <RouterView />
   </div>
 </template>

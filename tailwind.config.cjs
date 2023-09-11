@@ -82,13 +82,19 @@ module.exports = {
           '100%': { marginLeft: '0' },
         },
         fadeIn: {
-          '0%': { opacity: '0' },
+          '0%': { display: 'block', opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '99%': { opacity: '0' },
+          '100%': { display: 'none' },
         },
       },
       animation: {
         slide: 'slide 0.5s ease-in-out forwards',
         fadeIn: 'fadeIn 0.5s ease-in-out forwards',
+        fadeOut: 'fadeOut 0.5s ease-in-out forwards',
       },
     },
   },
