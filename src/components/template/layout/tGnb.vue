@@ -1,9 +1,7 @@
-<script setup lang="ts" scoped>
-import tWideWrap from '@template/layout/tWideWrap.vue';
-</script>
+<script setup lang="ts" scoped></script>
 
 <template>
-  <t-wide-wrap custom-style="sticky top-0 p-2 flex items-center h-60 bg-gray-100">
+  <div class="sticky top-0 flex h-60 items-center bg-gray-100 p-2">
     <div class="w-full max-w-1280">GNB</div>
-  </t-wide-wrap>
+  </div>
 </template>
